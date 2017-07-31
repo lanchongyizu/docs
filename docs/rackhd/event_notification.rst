@@ -21,13 +21,13 @@ version   String Event payload format version.
 type      String It could be one of the values: **heartbeat**, **node**, **polleralert**, **graph**.
 action    String a verb or a composition of component and verb which indicates what happened, it's associated with the `type` attribute.
 severity  String Event severity, it could be one of the values: **critical**, **warning**, **information**.
-typeId    String It's associated with the `type` attribute. It could be graph 'Id' for **graph** type, poller 'Id' for **polleralert** type, <fqdn>.<service name> for **heartbeat** event, node 'Id' for **node** type. Please see table_ for more details .
+typeId    String It's associated with the `type` attribute. It could be graph 'Id' for **graph** type, poller 'Id' for **polleralert** type, <fqdn>.<service name> for **heartbeat** event, node 'Id' for **node** type. Please see type_ for more details .
 createdAt String The time event happened.
 nodeId    String The node `Id`, it's `null` for 'heartbeat' event.
 data      Object Detail information are included in this attribute.
 ========= ====== =================================
 
-.. _table:
+.. _type:
 
 The table of `type`, `typeId`, `action` and `severity` for all external events
 
